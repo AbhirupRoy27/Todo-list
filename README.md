@@ -40,3 +40,53 @@ A visually stunning, cyberpunk-themed todo list application that transforms ordi
 ## 💻 Installation
 
 1. Clone the repository
+
+   
+2. Open `todo.html` in your web browser
+
+No additional dependencies or build steps required!
+
+## 🎯 Usage
+
+- Type your task in the input field
+- Click "Add Quest" or press Enter to add the task
+- Click a task to mark it as completed
+- Click the trash icon to remove a task
+- Tasks persist between browser sessions
+
+## 🎨 Customization
+
+The project uses CSS variables for easy theme customization. Main colors and animations can be adjusted in the `styles.css` file.
+
+## 🔮 Future Enhancements
+
+- Task categories
+- Priority levels
+- Due dates
+- Task filtering
+- Cloud sync
+- Dark/Light theme toggle
+
+## 📱 Browser Support
+
+- Chrome (recommended)
+- Firefox
+- Safari
+- Edge
+- Opera
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check [issues page](link-to-issues).
+
+## ⭐ Show your support
+
+Give a ⭐️ if this project helped you!
+
+---
+
+Created with 💻 by Abhirup Roy - Feel free to connect!
