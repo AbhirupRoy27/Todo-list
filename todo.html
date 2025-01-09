@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer's Task Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Simplified title -->
+    <h1>QUEST LOG</h1>
+
+    <!-- Background Elements -->
+    <div class="hex-background"></div>
+    
+    <!-- Container for dynamic elements -->
+    <div id="animation-container"></div>
+
+    <div class="container">
+        <!-- Task Entry Section -->
+        <div class="quest-entry-section">
+            <h2><i class="fas fa-scroll"></i> New Quest</h2>
+            <div class="input-group">
+                <input type="text" id="taskInput" placeholder="Enter new quest...">
+                <button id="addTaskBtn">
+                    <i class="fas fa-plus"></i> Add Quest
+                </button>
+            </div>
+        </div>
+
+        <!-- Task List Section -->
+        <div class="quest-list-section">
+            <h2><i class="fas fa-tasks"></i> Active Quests</h2>
+            <ul id="taskList"></ul>
+
+
+            <div class="empty-state" id="emptyState">
+                <i class="fas fa-scroll"></i> Your quest log is empty. Time to start a new adventure!
+            </div>
+
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+    // Enhanced animation script
+    function initializeAnimations() {
+        const container = document.getElementById('animation-container');
+        
+        // Create hexagons less frequently
+        for (let i = 0; i < 12; i++) {
+            setTimeout(() => createHexagon(), i * 2000); // Stagger creation
+        }
+        
+        // Create energy lines less frequently
+        for (let i = 0; i < 8; i++) {
+            setTimeout(() => createEnergyLine(), i * 1500); // Stagger creation
+        }
+        
+        // Create pulse rings less frequently
+        setInterval(createPulseRing, 3000); // Increased interval
+
+        function createHexagon() {
+            const hex = document.createElement('div');
+            hex.className = 'hex';
+            hex.style.left = Math.random() * 100 + 'vw';
+            hex.style.opacity = 0;
+            container.appendChild(hex);
+            
+            // Remove hex after animation
+            setTimeout(() => hex.remove(), 25000); // Increased duration
+            // Create new hex
+            setTimeout(createHexagon, 25000); // Increased interval
+        }
+
+        function createEnergyLine() {
+            const line = document.createElement('div');
+            line.className = 'energy-line';
+            line.style.left = Math.random() * 100 + 'vw';
+            container.appendChild(line);
+            
+            // Remove line after animation
+            setTimeout(() => line.remove(), 12000); // Increased duration
+            // Create new line
+            setTimeout(createEnergyLine, 12000); // Increased interval
+        }
+
+        function createPulseRing() {
+            const ring = document.createElement('div');
+            ring.className = 'pulse-ring';
+            ring.style.left = Math.random() * 100 + 'vw';
+            ring.style.top = Math.random() * 100 + 'vh';
+            ring.style.width = '10px';
+            ring.style.height = '10px';
+            container.appendChild(ring);
+            
+            // Remove ring after animation
+            setTimeout(() => ring.remove(), 8000); // Increased duration
+        }
+    }
+
+    // Initialize animations when page loads
+    window.addEventListener('load', initializeAnimations);
+    </script>
+</body>
+</html>
