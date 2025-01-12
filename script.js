@@ -16,3 +16,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         updateEmptyState();
     }
+// Save tasks to localStorage
+    function saveTasks() {
+        const tasks = [];
+        taskList.querySelectorAll('li').forEach(li => {
+            tasks.push({
+                text: li.querySelector('span').textContent,
+                completed: li.classList.contains('completed')
+            });
+        });
+        localStorage.setItem('tasks', JSON.stringify(tasks));
+    }
