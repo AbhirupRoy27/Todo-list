@@ -21,3 +21,18 @@ body {
     opacity: 0.9;
     z-index: -3;
 }
+
+/* Large floating hexagons */
+.hex {
+    position: fixed;
+    width: 150px;
+    height: 173.21px;
+    background: linear-gradient(45deg, 
+        rgba(66, 220, 219, 0.15) 0%,
+        rgba(66, 220, 219, 0.1) 50%,
+        rgba(66, 220, 219, 0) 100%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    animation: floatHex 25s infinite linear;
+    z-index: -2;
+    transition: all 1s ease-in-out;
+}
