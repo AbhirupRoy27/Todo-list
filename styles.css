@@ -52,3 +52,14 @@ body {
     z-index: -1;
     filter: blur(1px);
 }
+/* Pulse Rings */
+.pulse-ring {
+    position: fixed;
+    border: 3px solid rgba(66, 220, 219, 0.3);
+    border-radius: 50%;
+    animation: pulsate 8s infinite ease-out;
+    z-index: -2;
+    box-shadow: 
+        0 0 10px rgba(66, 220, 219, 0.2),
+        inset 0 0 10px rgba(66, 220, 219, 0.2);
+}
