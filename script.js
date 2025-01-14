@@ -27,3 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         localStorage.setItem('tasks', JSON.stringify(tasks));
     }
+    function updateEmptyState() {
+        emptyState.style.display = taskList.children.length === 0 ? 'block' : 'none';
+    }
