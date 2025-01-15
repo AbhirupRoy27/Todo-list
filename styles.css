@@ -63,3 +63,26 @@ body {
         0 0 10px rgba(66, 220, 219, 0.2),
         inset 0 0 10px rgba(66, 220, 219, 0.2);
 }
+/* Animation Keyframes */
+@keyframes floatHex {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.5;
+    }
+    80% {
+        opacity: 0.5;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
