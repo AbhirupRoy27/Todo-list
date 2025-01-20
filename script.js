@@ -49,3 +49,15 @@ function createTaskElement(taskText) {
                 saveTasks(); // Save when task is toggled
             }
         });
+    removeBtn.addEventListener('click', function() {
+            li.classList.add('remove-animation');
+            setTimeout(() => {
+                li.remove();
+                updateEmptyState();
+                saveTasks(); // Save when task is removed
+            }, 300);
+        });
+
+        li.appendChild(removeBtn);
+        return li;
+    }
