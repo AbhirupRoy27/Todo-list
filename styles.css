@@ -86,3 +86,27 @@ body {
         opacity: 0;
     }
 }
+@keyframes energyFlow {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+        width: 2px;
+    }
+    20% {
+        opacity: 0.2;
+        width: 3px;
+    }
+    50% {
+        opacity: 1;
+        width: 4px;
+    }
+    80% {
+        opacity: 0.2;
+        width: 3px;
+    }
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+        width: 2px;
+    }
+}
