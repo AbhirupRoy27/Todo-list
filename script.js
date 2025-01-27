@@ -61,3 +61,27 @@ function createTaskElement(taskText) {
         li.appendChild(removeBtn);
         return li;
     }
+    
+addTaskBtn.addEventListener('click', function() {
+        const taskText = taskInput.value.trim();
+
+        if (taskText === '') {
+            taskInput.classList.add('shake');
+            setTimeout(() => taskInput.classList.remove('shake'), 500);
+            return;
+        }
+
+        const li = createTaskElement(taskText);
+        taskList.appendChild(li);
+        taskInput.value = '';
+        updateEmptyState();
+        saveTasks(); // Save when new task is added
+
+        // Add appear animation
+        li.style.opacity = '0';
+        li.style.transform = 'translateY(20px)';
+        setTimeout(() => {
+            li.style.opacity = '1';
+            li.style.transform = 'translateY(0)';
+        }, 50);
+    });
