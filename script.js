@@ -85,3 +85,12 @@ addTaskBtn.addEventListener('click', function() {
             li.style.transform = 'translateY(0)';
         }, 50);
     });
+   taskInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            addTaskBtn.click();
+        }
+    });
+
+    // Load tasks when page loads
+    loadTasks();
+});
