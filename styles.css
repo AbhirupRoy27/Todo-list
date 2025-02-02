@@ -134,3 +134,26 @@ body {
         border-width: 1px;
     }
 }
+/* Add floating particles */
+.particle {
+    position: fixed;
+    width: 2px;
+    height: 2px;
+    background: rgba(66, 220, 219, 0.5);
+    pointer-events: none;
+    z-index: -1;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh) translateX(20px);
+        opacity: 0;
+    }
+}
