@@ -180,3 +180,22 @@ body {
     border: 1px solid rgba(66, 220, 219, 0.3);
     backdrop-filter: blur(10px);
 }
+h1 {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: #42DCDB;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0;
+    z-index: 100;
+    padding: 15px 25px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    position: relative;
+}
