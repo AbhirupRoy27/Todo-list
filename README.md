@@ -2,6 +2,21 @@
 
 A visually stunning, cyberpunk-themed todo list application that transforms ordinary tasks into epic quests. Built with pure HTML, CSS, and JavaScript, this project combines practical functionality with immersive aesthetics.
 
+## 🎮 User Interface
+
+- Cyberpunk-inspired design
+- Dark theme with neon accents
+- Animated background elements
+- Clean and intuitive task management
+- Smooth transitions and effects
+<br>
+
+<img width="1710" alt="Screenshot 2025-04-04 at 11 24 58 AM" src="https://github.com/user-attachments/assets/4000a06f-23b5-4331-8dee-7b3f4ef9eef9" />
+<br>
+<br>
+<img width="1699" alt="Screenshot 2025-04-04 at 11 33 03 AM" src="https://github.com/user-attachments/assets/8a27ffc3-4ba1-4f14-bc7d-9cc24bdc109e" />
+
+
 ## 🚀 Features
 
 - **Persistent Storage**: Tasks automatically save to localStorage
@@ -20,13 +35,7 @@ A visually stunning, cyberpunk-themed todo list application that transforms ordi
 - Font Awesome Icons
 - Google Fonts (Rajdhani)
 
-## 🎮 User Interface
 
-- Cyberpunk-inspired design
-- Dark theme with neon accents
-- Animated background elements
-- Clean and intuitive task management
-- Smooth transitions and effects
 
 ## 🔧 Core Functionality
 
@@ -40,7 +49,6 @@ A visually stunning, cyberpunk-themed todo list application that transforms ordi
 ## 💻 Installation
 
 1. Clone the repository
-
    
 2. Open `todo.html` in your web browser
 
@@ -81,8 +89,7 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check [issues page](link-to-issues).
-
+Contributions, issues, and feature requests are welcome! Feel free to contact
 ## ⭐ Show your support
 
 Give a ⭐️ if this project helped you!
