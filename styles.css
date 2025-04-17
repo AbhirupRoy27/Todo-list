@@ -199,3 +199,200 @@ h1 {
     margin-bottom: 25px;
     position: relative;
 }
+
+input[type="text"] {
+    flex: 1;
+    padding: 15px;
+    background: rgba(16, 20, 31, 0.8);
+    border: 2px solid #42DCDB;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #E2E8F0;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(66, 220, 219, 0.1);
+}
+
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 20px rgba(66, 220, 219, 0.3);
+    background: rgba(16, 20, 31, 0.9);
+}
+
+button {
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #42DCDB, #2C7873);
+    color: #0F1119;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: rotate(45deg);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+button:hover::before {
+    opacity: 1;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(66, 220, 219, 0.4);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: rgba(22, 28, 41, 0.8);
+    border: 1px solid rgba(66, 220, 219, 0.2);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    color: #E2E8F0;
+}
+
+li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 0 15px rgba(66, 220, 219, 0.2);
+    border-color: rgba(66, 220, 219, 0.4);
+}
+
+li.completed {
+    background: rgba(22, 28, 41, 0.5);
+    color: #666;
+    text-decoration: line-through;
+    border-color: rgba(66, 220, 219, 0.1);
+}
+
+li button {
+    padding: 8px 15px;
+    background: linear-gradient(45deg, #FF3E3E, #FF0000);
+    font-size: 14px;
+}
+
+.empty-state {
+    text-align: center;
+    color: #42DCDB;
+    margin-top: 30px;
+    font-style: italic;
+    text-shadow: 0 0 10px rgba(66, 220, 219, 0.3);
+}
+
+@keyframes neonPulse {
+    0% { box-shadow: 0 0 5px rgba(66, 220, 219, 0.2); }
+    50% { box-shadow: 0 0 20px rgba(66, 220, 219, 0.4); }
+    100% { box-shadow: 0 0 5px rgba(66, 220, 219, 0.2); }
+}
+
+.container {
+    animation: neonPulse 3s infinite;
+}
+
+/* Add gaming-style scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0F1119;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #42DCDB;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2C7873;
+}
+
+/* Section Headers */
+h2 {
+    color: #42DCDB;
+    font-size: 1.5em;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(66, 220, 219, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+h2 i {
+    font-size: 0.9em;
+}
+
+/* Quest Entry Section */
+.quest-entry-section {
+    background: rgba(22, 28, 41, 0.9);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(66, 220, 219, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.quest-entry-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, 
+        transparent, 
+        rgba(66, 220, 219, 0.5), 
+        transparent
+    );
+}
+
+/* Quest List Section */
+.quest-list-section {
+    background: rgba(22, 28, 41, 0.9);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(66, 220, 219, 0.3);
+    position: relative;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.quest-list-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, 
+        transparent, 
+        rgba(66, 220, 219, 0.5), 
+        transparent
+    );
+}
