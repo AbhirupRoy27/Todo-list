@@ -83,9 +83,6 @@ The project uses CSS variables for easy theme customization. Main colors and ani
 - Edge
 - Opera
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE.md file for details
 
 ## 🤝 Contributing
 
